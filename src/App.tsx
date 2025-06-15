@@ -56,6 +56,13 @@ function App() {
           next
         </button>
       </div>
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title">{SLIDES_DATA[count].title}</h5>
+          <p className="card-text">{SLIDES_DATA[count].text}</p>
+          <img src={"/images/"+count+".jpg" } className="img-thumbnail" alt="React logo" />
+        </div>
+      </div>
       <p className="text-center mt-2">
         <code>Current slide: {count} </code> 
       </p>
