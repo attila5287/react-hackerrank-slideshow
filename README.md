@@ -1,21 +1,32 @@
-# React + TypeScript + Vite
+# HACKERRANK REACT INTERVIEW CHALLENGE
+## SLIDE-SHOW-APP
+## [https://react-hackerrank-slideshow.vercel.app/](https://react-hackerrank-slideshow.vercel.app/)
+You are tasked with creating a simple React application called "Basic Slideshow" that displays a series of slides and allows users to navigate through them. The application requirements are detailed below, and the finished application must pass all of the unit tests.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Detailed Requirements
+1. The Slides component takes an array of slides as a prop. Each element of this array denotes a single
+slide and is an object with two properties: a string title and a string text.
+2. When the application loads, the first slide must be rendered.
+3. Clicking on the "Next" button shows the next slide. This button should be disabled when the current
+slide is the last one.
+4. Clicking on the "Prev" button shows the previous slide. This button should be disabled when the
+current slide is the first one.
+5. Clicking on the "Restart" button returns to the first slide. This button should be disabled when the
+current slide is the first one.
+6. You can assume that the passed slides array contains at least one slide.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
-
-## Deploy Your Own
-
-Deploy your own Vite project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vite-react&template=vite-react)
-
-_Live Example: https://vite-react-example.vercel.app_
-
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
-```
+### Sample Interaction
+#### Initial State
+The first slide is displayed.
+The "Prev" and "Restart" buttons are disabled.
+#### User Action 1
+User clicks "Next" button.
+The next slide is displayed.
+The "Prev" and "Restart" buttons are enabled.
+#### User Action 2
+User clicks "Prev" button.
+The previous slide is displayed.
+The "Prev" button is disabled if the first slide is shown.
+#### User Action 3 
+User clicks "Restart" button. - The first slide is displayed. - The "Prev" and "Restart"
+buttons are disabled.
