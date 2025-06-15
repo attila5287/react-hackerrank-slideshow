@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import 'bootswatch/dist/slate/bootstrap.min.css'
-import { SLIDES_DATA } from './constants.js'
+import { SLIDES_DATA } from './constants.ts'
 function App() {
   const [count, setCount] = useState(0)
   const handleReset = () => {
@@ -45,7 +45,7 @@ function App() {
           </a>
         </small>
       </div>
-      <div className="btn-group" role="group" aria-label="Basic example">
+      <div className="btn-group mt-2" role="group" aria-label="Basic example">
         <button className="btn btn-success" key="reset" onClick={handleReset}>
           <i className="fa-solid fa-sync"></i>
         </button>
@@ -56,7 +56,9 @@ function App() {
           next
         </button>
       </div>
-      <p> {count} </p> 
+      <p className="text-center mt-2">
+        <code>Current slide: {count} </code> 
+      </p>
     </>
   );
 }

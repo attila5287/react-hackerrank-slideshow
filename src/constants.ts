@@ -1,4 +1,9 @@
-export const SLIDES_DATA = [
+interface Slide {
+  title: string;
+  text: string;
+}
+
+export const SLIDES_DATA: Slide[] = [
   {
     title: "Today's workout plan",
     text: "We're gonna do 3 fundamental exercises.",
@@ -19,4 +24,4 @@ export const SLIDES_DATA = [
     title: "Great job!",
     text: "You made it, have a nice day and see you next time!",
   },
-];
+]; 
