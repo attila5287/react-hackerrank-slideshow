@@ -37,8 +37,9 @@ function App() {
         </h2>
         <small>
           <a key="code-repo" href="https://github.com/attila5287/react-hackerrank-slideshow" target="_blank" className="text-decoration-none text-info">
-            click here to see the code. 
+            click here to see the code
           </a>
+            (README for the requirements)
           <a key="gh-link" href="https://github.com/attila5287" target="_blank">
             <i className="fa-brands fa-github mx-2"></i>
             By <span>attila5287</span>
